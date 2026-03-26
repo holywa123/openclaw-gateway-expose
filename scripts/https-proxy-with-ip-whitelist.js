@@ -14,7 +14,8 @@ const TARGET_PORT = parseInt(process.env.OPENCLAW_TARGET_PORT) || 28789;
 // IP 白名单配置
 // 方式1：通过环境变量设置 ALLOWED_IPS，如："192.168.1.100,10.0.0.50"
 // 方式2：直接修改下面的数组
-const ALLOWED_IPS = ['58.19.0.149']; // 只允许特定 IP 访问
+// 修改此处为你允许访问的 IP 地址列表，留空数组则允许所有 IP
+const ALLOWED_IPS = []; // 例如: ['192.168.1.100', '58.19.0.1']
 
 // 检查证书文件
 if (!fs.existsSync(CERT_PATH)) {
