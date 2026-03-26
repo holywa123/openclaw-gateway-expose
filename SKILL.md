@@ -262,7 +262,7 @@ cloudflared tunnel run openclaw
 
 ```javascript
 // 在 https-proxy.js 中添加 IP 白名单
-const ALLOWED_IPS = ['192.168.1.100', '58.19.0.149']; // 允许的 IP 列表
+const ALLOWED_IPS = ['192.168.1.100', '203.0.113.50']; // 替换为你允许的 IP 列表
 
 function getClientIP(req) {
   const forwarded = req.headers['x-forwarded-for'];
